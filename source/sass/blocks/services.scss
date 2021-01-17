@@ -68,6 +68,22 @@
       color: rgba(#d0d0d0, 0.2);
     }
   }
+
+  &:nth-child(even) .services__info {
+    &::before,
+    &::after {
+      left: auto;
+      right: 0;
+    }
+
+    &::before {
+      bottom: -38px;
+    }
+
+    &::after {
+      bottom: -113px;
+    }
+  }
 }
 
 .services__info {
@@ -95,5 +111,11 @@
     height: 4px;
     background-color: $color-gold;
     transform: rotate(90deg);
+  }
+
+  &--design {
+    &::before {
+      content: "02.";
+    }
   }
 }

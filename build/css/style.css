@@ -246,15 +246,30 @@ html {
   width: 100%; }
 
 .main-header {
+  position: relative;
   padding: 0 32px;
   padding-top: 30px;
-  background-color: #000000;
-  background: url("../img/promo-back2.png") no-repeat 100% 0, url("../img/promo-back.png") no-repeat; }
+  background: url(../img/promo-back.png) no-repeat 63% 100% #010507;
+  background-size: cover; }
+  .main-header::before {
+    position: absolute;
+    content: "Coding & Frustration";
+    top: 484px;
+    right: 300px;
+    font-size: 14px;
+    line-height: 57px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.1);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
 
 .main-header__menu-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1920px;
+  margin: 0 auto;
   padding-bottom: 290px; }
 
 .main-header__btn-wrapper {
@@ -264,7 +279,7 @@ html {
   margin-right: auto;
   color: rgba(255, 255, 255, 0.5); }
 
-.main-header__btn {
+.main-header__btn-menu {
   margin-right: 12px;
   padding: 0;
   width: 33px;
@@ -335,8 +350,9 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .main-header__promo::before, .main-header__promo::after {
+    position: absolute; }
   .main-header__promo::before {
-    position: absolute;
     content: "—01";
     top: 32px;
     left: 300px;
@@ -347,17 +363,12 @@ html {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
   .main-header__promo::after {
-    position: absolute;
-    content: "Coding & Frustration";
-    top: 155px;
-    right: 300px;
-    font-size: 14px;
-    line-height: 57px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.1);
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
+    content: "";
+    bottom: 169px;
+    left: 675px;
+    width: 20px;
+    height: 216px;
+    background: url("../img/scroll.png") no-repeat; }
 
 .main-header__promo-name {
   margin: 0;
@@ -387,6 +398,24 @@ html {
     width: 34px;
     height: 11px;
     background: url("../img/arrow.png") no-repeat; }
+
+.main-header__promo-btns {
+  position: absolute;
+  top: 178px;
+  left: 355px; }
+
+.main-header__btns-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.main-header__btn-slider {
+  width: 10px;
+  height: 10px;
+  border: none;
+  background: url("../img/circle-grey.png") no-repeat; }
+  .main-header__btn-slider--active {
+    background: url("../img/circle-gold.png") no-repeat; }
 
 .main-header__promo-share {
   position: absolute;
@@ -453,6 +482,13 @@ html {
     line-height: 353px;
     letter-spacing: 5px;
     color: rgba(208, 208, 208, 0.2); }
+  .services__item:nth-child(even) .services__info::before, .services__item:nth-child(even) .services__info::after {
+    left: auto;
+    right: 0; }
+  .services__item:nth-child(even) .services__info::before {
+    bottom: -38px; }
+  .services__item:nth-child(even) .services__info::after {
+    bottom: -113px; }
 
 .services__info {
   position: relative; }
@@ -474,6 +510,8 @@ html {
     background-color: #bea67c;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
+  .services__info--design::before {
+    content: "02."; }
 
 .description {
   display: -webkit-box;
@@ -746,5 +784,7 @@ html {
 
 .main-footer__company {
   font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 10px;
   text-transform: uppercase;
   color: #ffffff; }
