@@ -1,0 +1,19 @@
+.main-footer {
+  padding: 27px 0 20px;
+  background-color: $color-black;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer__company-data {
+  padding-right: 412px;
+}
+
+.main-footer__company {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: $color-white;
+}

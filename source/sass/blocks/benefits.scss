@@ -1,0 +1,90 @@
+.benefits {
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.benefits__name {
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 100px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 48%;
+    width: 44px;
+    height: 4px;
+    background-color: $color-gold;
+  }
+}
+
+.benefits__desc {
+  margin: 0;
+  padding-bottom: 80px;
+}
+
+.benefits__list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+}
+
+.benefits__item {
+  &:not(:last-child) {
+    padding-right: 84px;
+  }
+}
+
+.benefits__wrapper {
+  position: relative;
+  padding-bottom: 35px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    left: 127px;
+    width: 25px;
+    height: 1px;
+    background-color: $color-gold;
+  }
+}
+
+.benefits__video {
+  padding: 20px;
+  border: 1px solid rgba($color-grey, 0.2);
+  border-radius: 50%;
+}
+
+.benefits__play-btn {
+  position: absolute;
+  content: "";
+  top: 111px;
+  left: 111px;
+  width: 68px;
+  height: 68px;
+  background: url("../img/play.png") no-repeat;
+  border: none;
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
+.benefits__video-name {
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-black;
+}

@@ -1,0 +1,40 @@
+.payment {
+  padding-top: 79px;
+  padding-bottom: 130px;
+  background: url("../img/payment-back.png") no-repeat 79% 100% $color-black;
+  background-size: cover;
+}
+
+.payment__wrapper {
+  padding: 0 175px;
+}
+
+.payment__btn {
+  position: relative;
+  width: 300px;
+  padding: 22px 22px 22px 60px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: $color-white;
+  background-color: transparent;
+  border: 2px solid $color-white;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 18px;
+    left: 58px;
+    width: 25px;
+    height: 25px;
+    background: url("../img/payment-play.png") no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    color: rgba($color-white, 0.5);
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+  }
+}

@@ -1,0 +1,99 @@
+.services {
+  padding-top: 90px;
+  padding-bottom: 200px;
+}
+
+.services__list {
+  @include reset-list;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -92px;
+    right: -22px;
+    width: 44px;
+    height: 4px;
+    background-color: $color-gold;
+    transform: rotate(90deg);
+  }
+}
+
+.services__item {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+  }
+
+  &--php {
+    &::before {
+      content: "F";
+      top: -311px;
+      left: 0;
+      font-size: 396px;
+      line-height: 440px;
+      color: rgba($color-gold, 0.07);
+    }
+
+    &::after {
+      content: "CODING";
+      top: 31px;
+      right: -294px;
+      font-size: 170px;
+      line-height: 353px;
+      letter-spacing: 5px;
+      color: rgba(#d0d0d0, 0.2);
+    }
+  }
+
+  &--design {
+    &::before {
+      content: "C";
+      top: -296px;
+      right: 4px;
+      font-size: 396px;
+      line-height: 440px;
+      color: rgba($color-gold, 0.07);
+    }
+
+    &::after {
+      content: "DESIGN";
+      top: 24px;
+      left: -354px;
+      font-size: 170px;
+      line-height: 353px;
+      letter-spacing: 5px;
+      color: rgba(#d0d0d0, 0.2);
+    }
+  }
+}
+
+.services__info {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    left: 25px;
+  }
+
+  &::before {
+    content: "01.";
+    bottom: 0;
+    font-size: 36px;
+    line-height: 100px;
+    letter-spacing: 5px;
+    color: $color-black;
+  }
+
+  &::after {
+    content: "";
+    bottom: -76px;
+    width: 44px;
+    height: 4px;
+    background-color: $color-gold;
+    transform: rotate(90deg);
+  }
+}

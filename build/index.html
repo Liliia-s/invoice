@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Профессиональная верстка и разработка сайтов от компании Invoice">
+  <title>IT-компания Invoice</title>
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/proximanova-bold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/proximanova-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/proximanova-regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/proximanova-regular.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header__menu-wrapper">
+      <div class="main-header__btn-wrapper">
+        <button class="main-header__btn"></button>
+        <p class="main-header__btn-name">Menu</p>
+      </div>
+      <p class="main-header__tagline">invoice // test</p>
+      <nav class="main-header__nav-wrapper">
+        <ul class="main-header__nav-list">
+          <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">Home</a></li>
+          <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">Products</a></li>
+          <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">About</a></li>
+        </ul>
+      </nav>
+      <span class="main-header__info"></span>
+      <form action="invoce.ru" method="post" class="main-header__lang">
+        <select name="lang" id="field-lang" class="main-header__select-list">
+          <option value="en" class="main-header__select-option">En</option>
+          <option value="ru" class="main-header__select-option">Ru</option>
+        </select>
+      </form>
+    </div>
+    <section class="main-header__promo container">
+      <h1 class="visually-hidden">IT-компания Invoice</h1>
+      <div class="main-header__promo-wrapper">
+        <p class="main-header__promo-name">Invoice</p>
+        <div class="main-header__promo-btn">
+          <a href="#" class="main-header__btn-link">Learn more</a>
+        </div>
+      </div>
+      <button class="main-header__promo-share" aria-label="Поделиться сайтом в социальных сетях"></button>
+    </section>
+  </header>
+  <main>
+    <section class="services container">
+      <ul class="services__list">
+        <li class="services__item services__item--php description">
+          <div class="services__info description__info">
+            <h2 class="description__name">F to respect</h2>
+            <p class="description__text">PHP is a general-purpose scripting language especially suited to web development. It was originally created by Danish-Canadian programmer Rasmus Lerdorf</p>
+            <a href="#" class="description__link">Learn more</a>
+            <span class="description__note">* On your own risk</span>
+          </div>
+          <div class="description__back description__back--php"></div>
+        </li>
+        <li class="services__item services__item--design description">
+          <div class="services__info description__info">
+            <h2 class="description__name">Design</h2>
+            <p class="description__text">Design is a plan or specification for the construction of an object or system or for the implementation</p>
+            <a href="#" class="description__link">Learn more</a>
+          </div>
+          <div class="description__back description__back--design"></div>
+        </li>
+      </ul>
+    </section>
+    <section class="benefits container">
+      <h2 class="benefits__name">Invoice – its work</h2>
+      <p class="benefits__desc">We create unique payment product. <br> Look at the short video about our system.</p>
+      <ul class="benefits__list">
+        <li class="benefits__item">
+          <div class="benefits__wrapper">
+            <img src="img/benefit-1.png" alt="Инновационный продукт" class="benefits__video">
+            <button class="benefits__play-btn" aria-label="Кнопка для воспроизведения видео"></button>
+          </div>
+          <span class="benefits__video-name">Innovative Product</span>
+        </li>
+        <li class="benefits__item">
+          <div class="benefits__wrapper">
+            <img src="img/benefit-2.png" alt="Высокий уровень профессионализма" class="benefits__video">
+            <button class="benefits__play-btn" aria-label="Кнопка для воспроизведения видео"></button>
+          </div>
+          <span class="benefits__video-name">High-level Skills</span>
+        </li>
+        <li class="benefits__item">
+          <div class="benefits__wrapper">
+            <img src="img/benefit-3.png" alt="Высокое качество продукта" class="benefits__video">
+            <button class="benefits__play-btn" aria-label="Кнопка для воспроизведения видео"></button>
+          </div>
+          <span class="benefits__video-name">Quality Products</span>
+        </li>
+      </ul>
+    </section>
+    <section class="payment">
+      <div class="payment__wrapper description container">
+        <div class="description__info description__info--payment">
+          <h2 class="description__name description__name--payment">Invoice - more than just a payment</h2>
+          <p class="description__text description__text--payment">A payment is the voluntary tender of money or its equivalent or of things of value by one party (such as a person or company) to another in exchange for goods, or services provided by them, or to fulfill a legal obligation. The party making a payment is commonly called the payer, while the payee is the party receiving the payment.</p>
+          <button class="payment__btn">Watch video</button>
+        </div>
+      </div>
+    </section>
+    <section class="about container">
+      <div class="description">
+        <div class="description__back">
+          <img src="img/about.png" alt="Наша команда">
+        </div>
+        <div class="description__info description__info--about">
+          <h2 class="description__name">About us</h2>
+          <p class="description__text">We are a team of professionals in the payment processing and other cool integration in acquiring system</p>
+          <a href="#" class="description__link">Learn more</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper container">
+      <span class="main-footer__company-data">2020 EGorchik</span>
+      <span class="main-footer__company">Invoice</span>
+    </div>
+  </footer>
+</body>
+
+</html>
