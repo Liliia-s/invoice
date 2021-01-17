@@ -1,8 +1,8 @@
 {
-  "name": "jewellery",
+  "name": "invoice",
   "version": "17.0.0",
   "private": true,
-  "description": "Акселератор - проект «Jewellery» от HTML Academy",
+  "description": "тестовое задание от INVOICE",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^9.8.6",
